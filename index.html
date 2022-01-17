@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mirage Music Board</title>
+    <title>Mirage Music Box</title>
 
     <link rel="stylesheet" href="/assets/css/style.css">
 
@@ -22,11 +22,11 @@
 
         <div class="row">
             <!-- Início do menu lateral -->
-            <div id="nav-lateral" class="col-md-3 border position-sticky sticky-top">
+            <div id="nav-lateral" class="col-md-2 border position-sticky sticky-top">
 
                 <div class="usuario d-flex flex-column justify-content-center align-items-center">
                     <div id="usuLogo" class="mb-2"></div>
-                    <p>Rodrigo Antunes &copy;</p>
+                    <p>Rodrigo Antunes</p>
                 </div>
 
                 <nav class="d-flex align-items-center justify-content-center">
@@ -35,16 +35,16 @@
                             <a class="nav-link" href="#"><i class="fas fa-home mr-2"></i> Home</a>
                         </li>
                         <li class="nav-item d-flex align-items-center">
-                            <a class="nav-link" href="#"><i class="fas fa-music mr-2"></i> Playlists</a>
+                            <a class="nav-link" href="#"><i class="fas fa-headphones mr-2"></i> Music</a>
                         </li>
                         <li class="nav-item d-flex align-items-center">
                             <a class="nav-link" href="#"><i class="far fa-play-circle mr-2"></i> Videos</a>
                         </li>
                         <li class="nav-item d-flex align-items-center">
-                            <a class="nav-link" href="#"> <i class="far fa-compass mr2"></i> Explore</a>
+                            <a class="nav-link" href="#"> <i class="far fa-compass mr-2"></i> Explore</a>
                         </li>
                         <li class="nav-item d-flex align-items-center">
-                            <a class="nav-link" href="#"><i class="fas fa-user-cog mr-2"></i> Personal Preferences</a>
+                            <a class="nav-link" href="#"><i class="fas fa-user-cog mr-2"></i> Configurations</a>
                         </li>
                     </ul>
                 </nav>
@@ -52,18 +52,174 @@
             </div>
             <!-- Fim do menu lateral -->
 
-            <div class="col-md-9">
-                <div class="p-4 p-md-5 pt-5">
-                    <h2 class="mb-4">Mirage Music Board</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="col-md-10">
+
+                <div class="banner bg-dark">
+                    <div id="music" class="rounded d-flex align-items-center">
+                        <button class="btn btn-secondary p-2 ml-5">Discover Now</button>
+                        <button class="btn p-2 ml-4 bg-light">Create Now</button>
+                    </div>
                 </div>
+
+                <!-- <section id="home" class="p-4 p-md-5 pt-5"> -->
+                <section id="home" class="p-4 p-md-4 pt-4">
+
+                    <h2 class="mb-4" style="font-family: Shayan">Mirage Music Box.</h2>
+                    <p>Com o Mirage Music Box, é fácil encontrar a música ou podcast ideal para cada momento, seja no celular, no computador, no tablet ou em outros dispositivos.</p>
+                    <p>Você também pode explorar as coleções montadas por amigos, artistas e celebridades ou criar uma estação de rádio e deixar o som rolar.
+
+                    <p>Crie a trilha sonora para a sua vida com o Mirage Music Box. 
+                    Faça uma assinatura ou crie uma conta grátis.</p>
+
+                    <!-- Início dos álbuns favoritos -->
+                    <div class="favoritos row">
+
+                        <div class="col-md-12 mt-4">
+                            <h2 class="mb-4"><i class="fas fa-star"></i> Favorite Albums.</h2>
+                        </div>
+
+                        <!-- Início do card dos álbuns -->
+                        <div class="col-md-6">
+                            <div class="card bg-dark text-white">
+                                <img src="assets/img/Artist/Armin van Buuren.jpg" class="card-img">
+                                <div id="texto-card" class="card-img-overlay p-4 d-flex flex-column justify-content-center">
+                                    <h5 class="card-title p-2 rounded-top">Armin van Buuren.</h5>
+                                    <p class="card-text p-2">Armin van Buuren live at @AMF presents Top 100 DJs Awards 2020 | from CM.com Circuit Zandvoort</p>
+                                    <p class="card-text p-1 rounded-bottom">Last updated 2 mins ago...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fim do card dos álbuns -->
+
+                        <!-- Início das musicas dos álbuns -->
+                        <div class="col-md-6 d-flex flex-column justify-content-around">
+                            <!-- Início da 1° musica do álbun -->
+                            <div class="row">
+                                <div class="musica col-md-7 pl-4 d-flex align-items-center">
+                                    <img src="/assets/img/Artist/EDC.jpg">
+                                    <div class="desc-musica pl-2">
+                                        <p>Martin Garrix.</p>
+                                        <h4>EDC - Eletronic Dance Carnival in Brazil - 2016 &copy;</h4>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 d-flex align-items-center">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="range" value="90" class="form-control-range">
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="col-md-2 d-flex align-items-center">
+                                    <i id="play-music" class="far fa-stop-circle ml-4"></i>
+                                </div>
+                            </div>
+                            <!-- Fim da 1° musica do álbun -->
+
+                            <!-- Início da 2° musica do álbun -->
+                            <div class="row">
+                                <div class="musica col-md-7 pl-4 d-flex align-items-center">
+                                    <img src="/assets/img/Artist/Raja Ram.jpg">
+                                    <div class="desc-musica pl-2">
+                                        <p>RajaRam.</p>
+                                        <h4>Psy-Fi - RajaRam Full Set - 2017 &copy;</h4>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 d-flex align-items-center">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="range" value="0" class="form-control-range">
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="col-md-2 d-flex align-items-center">
+                                    <i id="play-music" class="far fa-play-circle ml-4"></i>
+                                </div>
+                            </div>
+                            <!-- Fim da 2° musica do álbun -->
+
+                            <!-- Início da 3° musica do álbun -->
+                            <div class="row">
+                                <div class="musica col-md-7 pl-4 d-flex align-items-center">
+                                    <img src="/assets/img/Artist/Shingo Nakamura.jpg">
+                                    <div class="desc-musica pl-2">
+                                        <p>Shingo Nakamura.</p>
+                                        <h4>Aways &copy;</h4>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 d-flex align-items-center">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="range" value="0" class="form-control-range">
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="col-md-2 d-flex align-items-center">
+                                    <i id="play-music" class="far fa-play-circle ml-4"></i>
+                                </div>
+                            </div>
+                            <!-- Fim da 3° musica do álbun -->
+
+                            <!-- Início da 4° musica do álbun -->
+                            <div class="row">
+                                <div class="musica col-md-7 pl-4 d-flex align-items-center">
+                                    <img src="/assets/img/Artist/Boris Brejcha.jpg">
+                                    <div class="desc-musica pl-2">
+                                        <p>Boris Brejcha.</p>
+                                        <h4>Live in Concert - Prague TIPSPORT Arena - 2021 &copy;</h4>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 d-flex align-items-center">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="range" value="0" class="form-control-range">
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="col-md-2 d-flex align-items-center">
+                                    <i id="play-music" class="far fa-play-circle ml-4"></i>
+                                </div>
+                            </div>
+                            <!-- Fim da 4° musica do álbun -->
+
+                        </div>
+                        <!-- Fim das musicas dos álbuns -->
+                    </div>
+                    <!-- Fim dos álbuns favoritos -->
+
+                </section>
             </div>
         </div>
 
     </div>
+
+</section>
+
+</main>
+
+<footer id="footer">
+    <div id="rodape"></div>
+
+    <div class="info">
+
+        <div class="social">
+            <img src="./Assets/Icons/facebook.png">
+            <img src="./Assets/Icons/instagram.png">
+            <img src="./Assets/Icons/twitter.png">
+
+        </div>
+
+        <p><h5>Rodrigo Antunes - 2022 &copy;</h5></p>
+    </div>
+</footer>
+
 </body>
 
 </html>

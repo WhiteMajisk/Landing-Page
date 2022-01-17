@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Outfit:wght@100&display=swap');
+
 * {
     margin: 0 !important;
     padding: 0 !important;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -9,34 +11,45 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
+
+@font-face {
+    font-family: Shayan;
+    src: url(/assets/fonts/Shayan-3zM1y.otf);
+}
+
+/* ------------------ Menu Lateral ------------------ */
 
 #nav-lateral {
     height: 100vh;
+    border: none !important;
 }
 
 .usuario {
     height: 35%;
-    background: url(/assets/img/Cidade\ do\ Porto.jpg);
+    background: url(/assets/img/Mirage.jpg);
     background-position: center;
     background-size: cover;
     color: #fff;
+    border-bottom: solid 1px rgba(255, 255, 255, .5);
+    border-right: solid 1px rgba(255, 255, 255, .5);
 }
 
 #usuLogo {
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     background: url(/assets/img/Perfil.jpg);
     border-radius: 50%;
+    filter: drop-shadow(2px 2px 2px #000);
     background-size: cover;
     background-position: top;
 }
 
 nav {
     height: 65%;
-    background: rgb(253,187,45);
-    background: linear-gradient(220deg, rgba(253,187,45,1) 0%, rgba(34,193,195,1) 100%);
+    background-color: var(--color-primary);
 }
 
 .nav-link:hover {
@@ -52,15 +65,114 @@ nav ul li {
     height: 20%;
     width: 100%;
     color: #fff;
-    border-bottom: 1px solid transparent;
+    border-bottom: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.7595413165266106) 50%, rgba(252,176,69,1) 100%);
     transition: ease;
 }
 
 nav ul li:hover {
-    border-right: 5px solid rgba(148,233,225,1);
+    background-color: rgba(255, 255, 255, .05);
 }
 
 nav ul li a {
-    color: whitesmoke;
-    margin-left: 25% !important;
+    color: #c5c5c5;
+    margin-left: 20% !important;
+}
+
+
+/* ------------------ Banner ------------------ */
+
+#music {
+    width: 100%;
+    height: 35vh;
+    background: url(/assets/img/Banner.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: .7;
+}
+
+
+/* Cards */
+
+.card img {
+    opacity: .8;
+}
+
+.card {
+    border: none !important;
+    filter: drop-shadow(2px 2px 2px #000);
+}
+
+#texto-card h5,
+#texto-card p {
+    background: rgba(255, 255, 255, .05);
+}
+
+
+/* Musicas */
+
+.musica img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+#play-music {
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+/* Rodapé*/
+
+#footer {
+    background-color: white;
+    margin-top: 1.5rem;
+}
+
+#rodape {
+    background-image: url(/assets/img/TomorrwLand.jpg);
+    opacity: .7;
+    background-size: cover;
+    background-position: center;
+    border: radial-gradient white;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 200px;
+    color: black;
+}
+
+.info h3,
+.info p {
+    margin: 1rem 0;
+    width: 50%;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.social {
+    width: 20%;
+    margin: 0 0 1% 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social img {
+    width: 3.0rem;
+    height: 3.0rem;
+}
+
+.social img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .5s;
 }
